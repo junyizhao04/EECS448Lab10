@@ -1,7 +1,7 @@
 
 <?php
     $mysqli = new mysqli('mysql.eecs.ku.edu', 'j674z324', 'Aing4ide', 'j674z324');
-    if ($mysqli->connect_error){
+    if ($mysqli->connect_errno){
         printf("Connection failed %s\n", $mysqli->connect_error);
         exit();
     }
